@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    /* spacing */
+    margin: 25% 25%;
+
+    /* button sizing */
+    padding: 15% 20%;
+
+    /* looks */
+    background-color: #ca1111;
+    color: white;
+    font-size: 125%;
+    border-radius: 15pt;
+
+    /* movement */
+    transition: all .2s ease-in-out; 
+}
+
+button:hover {
+    transform: scale(1.1);
+}
