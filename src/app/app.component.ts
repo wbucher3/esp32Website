@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServiceService } from './service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  constructor(private service: ServiceService) {}
+
   
-  buttonClick() {
-    console.log("button clicked")
+  async buttonClick() {
+    let number = (await this.service.updateButton())
+      .subscribe(res => res);
+    console.log("Request Made!");
   }
 }
