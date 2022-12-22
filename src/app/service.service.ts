@@ -9,6 +9,7 @@ export class ServiceService {
   constructor(private http: HttpClient) { }
 
   async updateButton() {
+    console.log("making call on '" + environment.url + "update" + "'");
     return await this.http.get<number>(environment.url + "update");
   }
 }

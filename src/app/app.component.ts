@@ -12,6 +12,7 @@ export class AppComponent {
 
   
   async buttonClick() {
+    console.log("making request...")
     let number = (await this.service.updateButton())
       .subscribe(res => res);
     console.log("Request Made!");
