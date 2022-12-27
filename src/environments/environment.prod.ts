@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url: "http://18.219.211.242:5000/"
+  url: "http://springbootesp32-env.eba-2dyssetx.us-east-2.elasticbeanstalk.com/"
 };
